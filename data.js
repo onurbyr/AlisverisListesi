@@ -1,11 +1,20 @@
 var data = [
     {
-        "key": "asd123",
+        "key": "a1",
         "title": "Yoğurt"
     },
     {
-        "key": "asdadad",
+        "key": "a2",
         "title": "Salça"
-    }
+    },
+    {
+        "key": "a3",
+        "title": "Ekmek"
+    },
+    {
+        "key": "a4",
+        "title": "Bulgur"
+    },
+    
 ];
 module.exports=data;

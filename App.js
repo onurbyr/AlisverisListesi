@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, TextInput, Button, TouchableOpacity,FlatList, AsyncStorage } from 'react-native'
+import { Text, StyleSheet, View, TextInput, TouchableOpacity, FlatList } from 'react-native'
 import data from './data'
 import Swipeout from 'react-native-swipeout'
 
@@ -36,7 +36,7 @@ class FlatListItem extends Component {
       sectionId:1
     }
     return(
-      <Swipeout {...swipeSettings}>
+      <Swipeout {...swipeSettings} style={styles.swipedelete}>
         <View style={styles.flatstil}>
         <Text>{this.props.item.title}</Text>
         </View>
@@ -106,7 +106,6 @@ _iduret=(numberOfCharecters)=>{
     )
   }
 }
-
 const styles = StyleSheet.create({
   container:{
     margin:30,
@@ -123,17 +122,20 @@ const styles = StyleSheet.create({
     paddingVertical:10,
     alignItems:'center',
     marginTop:10
+    
   },
   buttontext:{
     fontSize:15,
-    color:'white'
   },
   flatstil:{
-    padding:10,
-    backgroundColor:'gray',
-    borderWidth:1
+    padding:5,
+    backgroundColor:'#F5FCFF',
+    borderBottomWidth:1,
+    borderColor:'#B2B2B2'
+  },
+  swipedelete:{
+    marginTop:20,
   }
 }
-
 )
 
